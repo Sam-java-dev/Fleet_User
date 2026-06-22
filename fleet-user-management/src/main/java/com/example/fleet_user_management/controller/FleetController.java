@@ -32,7 +32,6 @@ public class FleetController {
 
     @DeleteMapping
     public Fleet deleteFleetById(@RequestParam String id) {
-        System.out.println("Deleting fleet with ID: " + id);
         return fleetService.DeleteFleetById(id);
     }
 
